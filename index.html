@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusiya N - Portfolio</title>
+  <!-- Tailwind CSS CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-gray-900 min-h-screen">
+
+  <!-- Navigation bar with sticky behavior -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-md p-4">
+    <div class="container mx-auto flex justify-center space-x-8 text-lg font-medium">
+      <a href="#about" class="text-indigo-600 hover:opacity-80 transition-opacity duration-300">About</a>
+      <a href="#skills" class="text-indigo-600 hover:opacity-80 transition-opacity duration-300">Skills</a>
+      <a href="#projects" class="text-indigo-600 hover:opacity-80 transition-opacity duration-300">Projects</a>
+      <a href="#education" class="text-indigo-600 hover:opacity-80 transition-opacity duration-300">Education</a>
+      <a href="#contact" class="text-indigo-600 hover:opacity-80 transition-opacity duration-300">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container mx-auto p-4 sm:p-8 pt-24">
+
+    <!-- About/Home Section -->
+    <section id="about" class="py-16 md:py-24 flex flex-col md:flex-row items-center justify-center text-center md:text-left animate-fade-in-up">
+      <div class="md:mr-12">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+          Anusiya N
+        </h1>
+        <p class="text-xl sm:text-2xl text-slate-600 max-w-2xl mx-auto md:mx-0">
+          Hi, I’m Anusiya, an Artificial Intelligence and Data Science student passionate about building real-world AI solutions. I enjoy working with machine learning, NLP, and computer vision to solve practical problems. My projects range from resume automation tools to fake news detection and medical image classification, reflecting my drive to apply AI for impact.
+        </p>
+      </div>
+      <div class="mt-8 md:mt-0">
+        <!-- A simple placeholder for a profile image -->
+        <div class="w-48 h-48 sm:w-64 sm:h-64 bg-gradient-to-br from-indigo-300 to-purple-400 rounded-full overflow-hidden shadow-xl transform transition-transform hover:scale-105 duration-300">
+          <img src="https://placehold.co/500x500/A5B4FC/4338CA?text=Anusiya+N" alt="Anusiya N" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 animate-fade-in-up bg-gradient-to-br from-purple-50 to-indigo-50">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <!-- Programming Skills -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+          <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Programming</h3>
+          <ul class="list-disc list-inside space-y-2 text-left mx-auto max-w-xs">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <!-- Machine Learning Skills -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+          <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Machine Learning</h3>
+          <ul class="list-disc list-inside space-y-2 text-left mx-auto max-w-xs">
+            <li>Scikit-learn</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+          </ul>
+        </div>
+        <!-- Tools Skills -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:-translate-y-2 duration-300">
+          <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Tools</h3>
+          <ul class="list-disc list-inside space-y-2 text-left mx-auto max-w-xs">
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Flask</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 animate-fade-in-up bg-gradient-to-br from-indigo-50 to-purple-50">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-600">AI Resume Analyzer</h3>
+          <p class="text-slate-600 mb-4">Upload a resume to extract info (skills, education, experience), compare it with a job description, and get a match score and improvement suggestions.</p>
+          <div class="text-sm font-medium text-slate-500 mb-4">
+            Tech Stack: <span class="text-indigo-600 font-bold">Python, NLP (SpaCy, Transformers), Flask/React</span>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Sentiment Analysis Dashboard</h3>
+          <p class="text-slate-600 mb-4">Analyze tweets or product reviews and show positive/negative/neutral insights with charts.</p>
+          <div class="text-sm font-medium text-slate-500 mb-4">
+            Tech Stack: <span class="text-indigo-600 font-bold">Python, Scikit-learn, Hugging Face, Streamlit</span>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-600">AI Study Assistant</h3>
+          <p class="text-slate-600 mb-4">Input lecture notes to summarize content and generate practice quiz questions.</p>
+          <div class="text-sm font-medium text-slate-500 mb-4">
+            Tech Stack: <span class="text-indigo-600 font-bold">NLP, Transformers, Flask/React</span>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+          <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Plant Disease Detection</h3>
+          <p class="text-slate-600 mb-4">Upload a leaf image to detect the disease and suggest remedies.</p>
+          <div class="text-sm font-medium text-slate-500 mb-4">
+            Tech Stack: <span class="text-indigo-600 font-bold">CNN (TensorFlow/PyTorch), OpenCV</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 md:py-24 animate-fade-in-up">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Education</h2>
+      <div class="bg-white p-6 rounded-xl shadow-lg max-w-2xl mx-auto text-center">
+        <h3 class="text-xl font-semibold mb-2 text-indigo-600">B.Tech Artificial Intelligence & Data Science</h3>
+        <p class="text-slate-600">2022–2027, Kongunadu college of engineering and Technology</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 text-center animate-fade-in-up">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8">Get In Touch</h2>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <a href="mailto:anunagarajan2006@gmail.com" class="inline-block bg-gradient-to-br from-indigo-600 to-purple-700 text-white px-6 py-3 rounded-lg font-medium hover:opacity-80 transition-opacity duration-300">
+          Email Me
+        </a>
+        <div class="flex space-x-6 text-2xl">
+          <!-- GitHub Icon -->
+          <a href="https://github.com/anu-sairam" class="text-gray-800 hover:text-gray-600 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.11.82-.26.82-.577v-2.02c-3.338.727-4.04-1.608-4.04-1.608-.545-1.385-1.332-1.755-1.332-1.755-1.085-.745.08-.73.08-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.81 1.305 3.492.997.108-.775.42-1.305.765-1.605-2.665-.3-5.464-1.33-5.464-5.932 0-1.31.465-2.38 1.235-3.22-.12-.3-.538-1.52.115-3.17 0 0 1.005-.322 3.3 1.23.955-.266 1.96-.4 2.96-.4.998 0 2.005.134 2.96.4 2.29-1.552 3.295-1.23 3.295-1.23.653 1.65.235 2.87.115 3.17.77.84 1.235 1.91 1.235 3.22 0 4.61-2.8 5.632-5.475 5.922.42.36.81 1.096.81 2.22v3.295c0 .32.21.69.82.577C20.563 21.8 24 17.302 24 12 24 5.373 18.627 0 12 0z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/anunagarajan06?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.23 0H1.77C.79 0 0 .788 0 1.764v20.473c0 .976.79 1.763 1.77 1.763h20.473c.976 0 1.763-.787 1.763-1.763V1.764C24 .788 23.21 0 22.23 0zM7.182 20.306H3.614V9.613h3.568v10.693zM5.398 8.017a2.094 2.094 0 01-2.094-2.094c0-1.155.939-2.094 2.094-2.094 1.155 0 2.094.939 2.094 2.094 0 1.155-.939 2.094-2.094 2.094zM20.386 20.306H16.82v-5.613c0-1.336-.024-3.057-1.865-3.057-1.866 0-2.152 1.458-2.152 2.964v5.706h-3.567V9.613h3.424v1.579h.049a3.743 3.743 0 013.364-1.854c3.606 0 4.276 2.373 4.276 5.462v6.106z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center text-slate-500 text-sm">
+    &copy; 2024 Anusiya N. All Rights Reserved.
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Find all sections that have the animate-fade-in-up class
+      const sections = document.querySelectorAll('.animate-fade-in-up');
+      
+      const observerOptions = {
+        root: null, // relative to the viewport
+        rootMargin: '0px',
+        threshold: 0.2 // trigger when 20% of the item is visible
+      };
+      
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Add a class to start the animation
+            entry.target.style.opacity = '1';
+            // Unobserve the element once it's visible to save performance
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Observe each section
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
